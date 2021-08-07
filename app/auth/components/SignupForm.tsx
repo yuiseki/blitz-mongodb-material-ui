@@ -34,8 +34,6 @@ export const SignupForm = (props: SignupFormProps) => {
       } catch (err) {
         if (err.message.indexOf("[") === 1) {
           const errors = JSON.parse(err.message)
-          console.log(errors[0])
-          console.log(errors[0].code)
           setError(errors[0])
         } else {
           setError(err)
