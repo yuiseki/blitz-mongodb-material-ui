@@ -58,7 +58,7 @@ export const useStyles = makeStyles((theme: Theme) =>
         easing: theme.transitions.easing.easeOut,
         duration: theme.transitions.duration.enteringScreen,
       }),
-      marginLeft: 0,
+      marginLeft: drawerWidth,
     },
   })
 )
