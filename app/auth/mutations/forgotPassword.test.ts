@@ -4,7 +4,8 @@ import db from "db"
 import previewEmail from "preview-email"
 
 beforeEach(async () => {
-  await db.$reset()
+  //await db.$reset()
+  await db.user.deleteMany({ where: { email: "user@example.com" } })
 })
 
 const generatedToken = "plain-token"

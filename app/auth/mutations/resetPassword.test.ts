@@ -3,7 +3,8 @@ import db from "db"
 import { hash256, SecurePassword } from "blitz"
 
 beforeEach(async () => {
-  await db.$reset()
+  //await db.$reset()
+  await db.user.deleteMany({ where: { email: "user@example.com" } })
 })
 
 const mockCtx: any = {
