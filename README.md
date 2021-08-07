@@ -2,7 +2,7 @@
 
 This is a [Blitz.js](https://github.com/blitz-js/blitz) app.
 
-# **blitz-hoge**
+# **blitz-mongodb-material-ui**
 
 ## Getting Started
 
@@ -19,13 +19,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Ensure the `.env.local` file has required environment variables:
 
 ```
-DATABASE_URL=postgresql://<YOUR_DB_USERNAME>@localhost:5432/blitz-hoge
+DATABASE_URL=mongodb://USERNAME:PASSWORD@HOST/DATABASE
 ```
 
 Ensure the `.env.test.local` file has required environment variables:
 
 ```
-DATABASE_URL=postgresql://<YOUR_DB_USERNAME>@localhost:5432/blitz-hoge_test
+DATABASE_URL=mongodb://USERNAME:PASSWORD@HOST/DATABASE_TEST
 ```
 
 ## Tests
@@ -33,7 +33,7 @@ DATABASE_URL=postgresql://<YOUR_DB_USERNAME>@localhost:5432/blitz-hoge_test
 Runs your tests using Jest.
 
 ```
-yarn test
+npm test
 ```
 
 Blitz comes with a test setup using [Jest](https://jestjs.io/) and [react-testing-library](https://testing-library.com/).
